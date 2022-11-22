@@ -1,0 +1,15 @@
+# mover archivo a ~/.ssh/config
+# desencriptar clave y mover a ~/.ssh/github.key
+
+- name: "Copy ssh config file"
+  ansible.builtin.copy:
+    src: ./files/ssh.config
+    dest: /home/tux/.ssh/config
+- name: "Copy github private key"
+  ansible.builtin.copy:
+    src: ./keys/github.key.enc
+    dest: /home/tux/.ssh/github.key
+    decrypt: yes
+    owner: tux
+    group: tux
+    mode: '0600'

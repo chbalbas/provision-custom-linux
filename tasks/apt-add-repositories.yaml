@@ -1,0 +1,6 @@
+- name: Add repositories ulauncher
+  become: yes
+  ansible.builtin.shell: ./scripts/add-repository-ulauncher.sh
+- name: Add repositories vbox
+  become: yes
+  ansible.builtin.shell: ./scripts/add-repository-virtualbox.sh

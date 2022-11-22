@@ -1,0 +1,8 @@
+- name: Install a ObinsKit
+  become: yes
+  ansible.builtin.apt:
+    deb: ./packages/ObinsKit_1.2.11_x64.deb
+- name: Install a VirtualBox
+  become: yes
+  ansible.builtin.apt:
+    deb: ./packages/virtualbox-7.0_7.0.4-154605_Debian_bullseye_amd64.deb

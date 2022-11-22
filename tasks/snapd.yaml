@@ -1,0 +1,20 @@
+- name: "Instalar snapd"
+  become: yes
+  apt:
+    name: "snapd"
+    state: present
+    update_cache: yes
+- name: Instalar paquetes de snap
+  become: yes
+  snap:
+    name:
+      - code
+      - youtube-dl
+      - spotify
+      - brave
+      - telegram-desktop
+      - postman
+      - vlc
+      - mailspring
+    classic: true
+

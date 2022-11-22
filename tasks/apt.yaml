@@ -1,0 +1,19 @@
+- name: "Instalar paquetes apt"
+  become: yes
+  apt:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop:
+    - gnome-tweaks
+    - gnome-shell-extensions
+    - git
+    - wget
+    - curl
+    - zsh
+    - gcc
+    - build-essential
+    - linux-headers-generic
+    - ulauncher
+    - gparted
+
