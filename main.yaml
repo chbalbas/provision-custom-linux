@@ -1,7 +1,7 @@
 - hosts: localhost
   # roles:
   # # https://github.com/jaredhocutt/ansible-gnome-extensions
-  #   - role: gnome-extensions
+  #   - role: roles/gnome-extensions
   #     vars:
   #       gnome_extension_ids:
   #         - 5135 # audio selector
