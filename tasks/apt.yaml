@@ -16,4 +16,7 @@
     - linux-headers-generic
     - ulauncher
     - gparted
-
+    - vim
+    - zsh
+    - zsh-syntax-highlighting 
+    - zsh-autosuggestions

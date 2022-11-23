@@ -1,19 +1,19 @@
 - hosts: localhost
-  # roles:
-  # # https://github.com/jaredhocutt/ansible-gnome-extensions
-  #   - role: roles/gnome-extensions
-  #     vars:
-  #       gnome_extension_ids:
-  #         - 5135 # audio selector
-  #         - 307  # dash to dock
-  #         - 1160 # dash to panel
-  #         - 779  # clipboard
-  #         - 1099 # panel transparency
-  #         - 1262 # bing wallpaper
+  roles:
+  # https://github.com/jaredhocutt/ansible-gnome-extensions
+    - role: roles/gnome-extensions
+      vars:
+        gnome_extension_ids:
+          - 5135 # audio selector
+          - 307  # dash to dock
+          - 1160 # dash to panel
+          - 779  # clipboard
+          - 1099 # panel transparency
+          - 1262 # bing wallpaper
   tasks:
-    # - include: tasks/snapd.yaml
-    # - include: tasks/apt-add-repositories.yaml
-    # - include: tasks/dpkg.yaml
-    # - include: tasks/apt.yaml
-    # - include: tasks/docker.yaml
+    - include: tasks/snapd.yaml
+    - include: tasks/apt-add-repositories.yaml
+    - include: tasks/dpkg.yaml
+    - include: tasks/apt.yaml
+    - include: tasks/docker.yaml
     - include: tasks/configure-git.yaml
