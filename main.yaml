@@ -10,6 +10,7 @@
           - 779  # clipboard
           - 1099 # panel transparency
           - 1262 # bing wallpaper
+          - 4356 # top bar organizer
   tasks:
     - include: tasks/snapd.yaml
     - include: tasks/apt-add-repositories.yaml
